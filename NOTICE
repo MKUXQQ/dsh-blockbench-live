@@ -1,0 +1,21 @@
+Third-party notices
+===================
+
+dsh-blockbench-live is MIT licensed (see LICENSE).
+
+Portions of this plugin — the WS JSON-RPC transport, parts of the Host plugin
+scaffolding, the bb_* tool surface and the Blockbench bridge agent — are
+derived from:
+
+  blockbench-ysm-agent
+  https://github.com/yan-mc/blockbench-ysm-agent
+  MIT License, Copyright (c) the blockbench-ysm-agent contributors
+
+The bundled Blockbench runtime (assembled separately by `npm run assemble`,
+not committed to this repository) is:
+
+  Blockbench
+  https://github.com/JannisX11/blockbench
+  GPL-3.0 (its own license; redistribution must keep the runtime's license)
+
+Electron is MIT licensed: https://github.com/electron/electron

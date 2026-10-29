@@ -1,0 +1,62 @@
+{
+  "name": "dsh-blockbench-live",
+  "version": "0.5.0",
+  "private": false,
+  "type": "module",
+  "description": "Live Blockbench preview in the chat dock plus semantic bb_* modeling, texturing, render and export tools",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "README.md",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "index.js",
+    "lib/ws-server.js",
+    "locale/*.json",
+    "skills/*.md"
+  ],
+  "scripts": {
+    "test": "node test/host-smoke.mjs",
+    "test:ws": "node ws-smoke-test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MKUXQQ/dsh-blockbench-live.git",
+    "directory": "packages/dsh-blockbench-live"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "blockbench",
+    "minecraft",
+    "modeling",
+    "ysm"
+  ]
+}

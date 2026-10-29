@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Blockbench 实时",
+    "description": "在对话界面右下角实时观看后台 Blockbench 画面，并用 bb_* 语义工具建模、贴图、渲染自检与导出。"
+  }
+}

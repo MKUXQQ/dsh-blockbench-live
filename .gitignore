@@ -1,0 +1,6 @@
+*.log
+.DS_Store
+apps/_hosttest/
+apps/bb-agent-app/
+node_modules/
+workspace/
